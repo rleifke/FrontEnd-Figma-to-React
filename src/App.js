@@ -11,6 +11,7 @@ import NavbarMain from './pages/NavBar/NavBarMain';
 import NavBarHome from './pages/NavBar/NavBarHome';
 import NavBarSecondary from './pages/NavBar/NavBarSecondary';
 import DropDown from './pages/Dropdown';
+import Footer from './pages/Footer/Footer';
 
 function App() {
   return (
@@ -22,7 +23,7 @@ function App() {
           <Home />
         </Route>
         <Route exact path='/farmpool'>
-          <NavbarMain />
+          <NavbarMain page={'Farm Pools'} />
           <FarmPool />
         </Route>
         <Route exact path='/farmpool/farm'>
@@ -30,7 +31,7 @@ function App() {
           <Farm />
         </Route>
         <Route exact path='/earn'>
-          <NavbarMain />
+          <NavbarMain page={'Earn'} />
           <Earn />
         </Route>
         <Route exact path='/earn/deposit'>
@@ -42,7 +43,7 @@ function App() {
           <Withdrawn />
         </Route>
         <Route exact path='/position'>
-          <NavbarMain />
+          <NavbarMain page={'Positions'} />
           <Position />
         </Route>
         <Route exact path='/position/remove'>
@@ -50,6 +51,7 @@ function App() {
           <Remove />
         </Route>
       </Switch>
+      <Footer />
     </Router>
   );
 }

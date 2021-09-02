@@ -18,6 +18,7 @@ const Dropdown = () => {
           {navData.map((item, index) => {
             return (
               <DropdownLink to={item.link} key={index}>
+                {item.icons}
                 {item.title}
               </DropdownLink>
             );
@@ -80,6 +81,12 @@ const DropdownLink = styled(Link)`
   list-style: none;
   cursor: pointer;
   transition: 0.2s ease-in-out;
+  svg {
+    margin-right: 0.5rem;
+    width: 1.5rem;
+    height: auto;
+    font-size: 2rem;
+  }
 `;
 const BtnWrapper = styled.div`
   display: flex;

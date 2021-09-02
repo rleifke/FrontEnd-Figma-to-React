@@ -1,5 +1,5 @@
 import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
-import Home from './pages/Home';
+import Home from './pages/Home/Home';
 import FarmPool from './pages/FarmPool/FarmPool';
 import Farm from './pages/FarmPool/Farm';
 import Earn from './pages/Earn/Earn';

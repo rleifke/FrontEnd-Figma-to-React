@@ -13,13 +13,16 @@ export const FooterWrapper = styled.footer`
 `;
 
 export const Wrapper = styled.div`
-  width: 90vw;
+  width: 85vw;
   display: flex;
   align-items: center;
   justify-content: space-between;
   flex-wrap: wrap;
   margin: 0 auto;
   min-height: calc(20vh - 18px);
+  @media screen and (max-width: 1000px) {
+    width: 90vw;
+  }
 `;
 export const LogoContainer = styled.div`
   width: 25%;
@@ -50,20 +53,23 @@ export const LogoLink = styled(Link)`
   font-size: 24px;
   padding: 0;
   margin: 0;
-  @media screen and (max-width: 1000px) {
-    font-size: 18px;
-  }
 `;
 
 export const Desc = styled.p`
   font-size: 12px;
   color: var(--fourth-color);
   font-weight: 400;
+  @media screen and (max-width: 1000px) {
+    width: 80%;
+  }
 `;
 export const Copy = styled.p`
   color: var(--white);
   font-size: 8px;
   font-weight: 500;
+  @media screen and (max-width: 1000px) {
+    display: none;
+  }
 `;
 export const LinksContainer = styled.div`
   width: 60%;
@@ -73,7 +79,6 @@ export const LinksContainer = styled.div`
   justify-content: space-between;
   flex-wrap: wrap;
   @media screen and (max-width: 1000px) {
-    padding-bottom: calc(1rem + 18px);
     width: 100%;
   }
 `;
@@ -146,4 +151,17 @@ export const Line = styled.div`
   position: absolute;
   bottom: 18px;
   left: 0;
+  @media screen and (max-width: 1000px) {
+    display: none;
+  }
+`;
+
+export const CopyMobile = styled.p`
+  color: var(--white);
+  font-size: 8px;
+  font-weight: 500;
+  margin: 1rem 0;
+  @media screen and (min-width: 1000px) {
+    display: none;
+  }
 `;

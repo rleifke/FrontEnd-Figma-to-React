@@ -10,14 +10,20 @@ export const NavWrapper = styled.nav`
   z-index: 100;
   background: var(--third-color);
   box-shadow: 0px 0px 36px rgba(0, 211, 149, 0.66);
+  @media screen and (max-width: 1000px) {
+    height: 67px;
+  }
 `;
 
 export const Wrapper = styled.div`
-  width: 90vw;
+  width: 85vw;
   height: 100%;
   display: flex;
   justify-content: space-between;
   align-items: center;
+  @media screen and (max-width: 1000px) {
+    width: 90vw;
+  }
 `;
 
 export const Logo = styled.div`

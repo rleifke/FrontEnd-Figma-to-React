@@ -18,6 +18,7 @@ import {
   LinksTo,
   LinksA,
   Line,
+  CopyMobile,
 } from './FooterStyles';
 const Footer = () => {
   return (
@@ -70,6 +71,7 @@ const Footer = () => {
             </Content>
           </Container>
         </LinksContainer>
+        <CopyMobile>© 2021 Dahlia Finance . All rights reserved.</CopyMobile>
       </Wrapper>
       <Line />
     </FooterWrapper>

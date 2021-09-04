@@ -4,10 +4,12 @@ export const Item = styled.div`
   width: 100%;
   padding: 0 2rem;
   display: grid;
-  grid-template-columns: 1.2fr repeat(2, 0.8fr) 1.2fr 1fr repeat(2, 0.7fr);
+  grid-template-columns: 1fr repeat(5, 0.9fr) 1.6fr;
+
   grid-template-rows: 1fr;
   height: 75px;
   border-bottom: 1px solid #72828a15;
+  color: var(--white);
   .left {
     margin-left: 1rem;
   }
@@ -24,41 +26,13 @@ export const Item = styled.div`
     display: flex;
     align-items: center;
     height: 100%;
-  }
-  .flex {
-    display: flex;
-    align-items: center;
-    img {
-      margin-right: 0.5rem;
-    }
-    h3 {
-      font-size: 12px;
-      color: var(--fourth-color);
-      font-weight: 400;
-    }
     h2 {
       font-size: 12px;
       color: var(--white);
       font-weight: 400;
     }
   }
-  .block {
-    display: block;
-    h3 {
-      color: var(--fourth-color);
-      font-size: 12px;
-      margin-bottom: 0.3rem;
-      font-weight: 400;
-    }
-    h2 {
-      font-size: 16px;
-      font-weight: 400;
-      color: var(--white);
-    }
-  }
-  .center {
-    text-align: center;
-  }
+
   .centerMiddle {
     display: flex;
     align-items: center;
@@ -68,11 +42,6 @@ export const Item = styled.div`
     color: var(--white);
     font-size: 16px;
     font-weight: 400;
-  }
-  .large {
-    font-weight: 600;
-    font-size: 24px;
-    color: var(--white);
   }
   .end {
     display: flex;
@@ -88,30 +57,9 @@ export const Item = styled.div`
     font-weight: 600;
     font-size: 14px;
     text-decoration: none;
-  }
-  .height {
-    height: 75px;
-  }
-  .flexColumn {
-    display: flex;
-    align-items: flex-start;
-    justify-content: center;
-    flex-direction: column;
-    h3 {
-      color: var(--fourth-color);
-      font-size: 12px;
-      margin-bottom: 0.3rem;
-      font-weight: 400;
+    &:first-of-type {
       margin-right: 0.5rem;
     }
-    h2 {
-      font-size: 16px;
-      font-weight: 400;
-      color: var(--white);
-    }
-  }
-  .margin {
-    margin-bottom: 0.5rem;
   }
   @media screen and (max-width: 1000px) {
     display: none;
@@ -168,19 +116,6 @@ export const Description = styled.h3`
   font-size: 24px;
   margin: 0;
   margin-top: 1rem;
-  span {
-    background: var(--white);
-    width: 68px;
-    height: 25px;
-    border-radius: 15px;
-    color: var(--black);
-    font-size: 24px;
-    font-weight: 400;
-    margin-left: 1rem;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-  }
   @media screen and (max-width: 1000px) {
     font-size: 18px;
   }
@@ -227,12 +162,6 @@ export const Button = styled.button`
   border: none;
   outline: none;
   cursor: pointer;
-  &:first-of-type {
-    margin-right: 0.5rem;
-  }
-  &:last-of-type {
-    margin-left: 0.5rem;
-  }
 `;
 
 export const InfoContainer = styled.div`
@@ -260,7 +189,7 @@ export const InfoContainer = styled.div`
 
 export const Header = styled.div`
   display: grid;
-  grid-template-columns: 1.2fr repeat(2, 0.8fr) 1.2fr 1fr repeat(2, 0.7fr);
+  grid-template-columns: 1fr repeat(5, 0.9fr) 1.6fr;
   grid-template-rows: 1fr;
   height: 55px;
   border-bottom: 1px solid #72828a15;

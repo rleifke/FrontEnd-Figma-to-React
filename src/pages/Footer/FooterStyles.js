@@ -6,10 +6,10 @@ export const FooterWrapper = styled.footer`
   min-height: 23vh;
   background: var(--third-color);
   box-shadow: 0px 0px 36px rgba(0, 211, 149, 0.23);
-  position: relative;
   display: flex;
   flex-wrap: wrap;
   align-items: center;
+  position: relative;
 `;
 
 export const Wrapper = styled.div`

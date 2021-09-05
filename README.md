@@ -1,4 +1,4 @@
-# Dahlia Interface (Front-end [pre-merge])
+# Dahlia Interface 
 
 This is the pre-merged front-end for Dahlia. 
 

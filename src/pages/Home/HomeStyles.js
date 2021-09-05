@@ -1,6 +1,5 @@
 import { Link } from 'react-router-dom';
 import styled from 'styled-components';
-//
 
 export const Wrapper = styled.section`
   width: 85vw;

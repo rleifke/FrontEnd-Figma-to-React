@@ -3,14 +3,14 @@ import { useGlobalContext } from '../../context/context';
 import styled from 'styled-components';
 import ImageCelo from '../../images/eth.png';
 import ImageUBE from '../../images/usdt.png';
-const FarmFirstContainer = () => {
-  const { handleIndexFarm } = useGlobalContext();
+
+const SecondContainer = () => {
+  const { handleIndexAdd, handleBackIndexAdd } = useGlobalContext();
   const [firstNumber, setFirstNumber] = useState('0.00');
   const [secondNumber, setSecondNumber] = useState('0.00');
   const [thirdNumber, setThirdNumber] = useState('0.00');
   return (
     <Wrapper>
-      <Header>FARM</Header>
       <InfoCard>
         <InfoHeader>I d like to supply</InfoHeader>
         <InputContainer>
@@ -60,29 +60,30 @@ const FarmFirstContainer = () => {
         </InputContainer>
         <Line />
         <Control>
-          <Button onClick={handleIndexFarm}>Next</Button>
+          <Back onClick={handleBackIndexAdd}>Back</Back>
+          <Button onClick={handleIndexAdd}>Next</Button>
         </Control>
       </InfoCard>
     </Wrapper>
   );
 };
 
-export default FarmFirstContainer;
+export default SecondContainer;
+
+const Back = styled.p`
+  font-size: 14px;
+  font-weight: 600;
+  color: var(--main-color);
+  margin-left: 1rem;
+  cursor: pointer;
+`;
 
 const Wrapper = styled.section`
   width: 45vw;
   display: block;
-  margin: 3rem 0 6rem 7.5vw;
-  padding-bottom: 3rem;
-`;
-
-const Header = styled.h1`
-  font-size: 36px;
-  font-weight: 700;
-  color: var(--main-color);
-  padding: 0;
-  margin: 0;
-  margin-bottom: 2rem;
+  margin: 3rem 0;
+  margin-left: 7.5vw;
+  margin-bottom: 5rem;
 `;
 
 const InfoCard = styled.article`
@@ -220,5 +221,7 @@ const Control = styled.div`
   width: calc(100% - 2rem);
   margin: 0 auto;
   padding: 1rem 0;
-  text-align: right;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
 `;

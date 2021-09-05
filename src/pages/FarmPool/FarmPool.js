@@ -63,10 +63,10 @@ const FarmPool = () => {
             <h2>Pool</h2>
             <h2>Projected APY %</h2>
             <h2 className='center'>Pool APR</h2>
-            <h2></h2>
+            <div></div>
             <h2>Borrow APR</h2>
             <h2>Max Leverage</h2>
-            <h2></h2>
+            <div></div>
           </Header>
           {FarmPoolData.map((item, index) => {
             return (

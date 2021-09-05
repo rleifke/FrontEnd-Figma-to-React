@@ -12,6 +12,7 @@ import NavBarHome from './pages/NavBar/NavBarHome';
 import NavBarSecondary from './pages/NavBar/NavBarSecondary';
 import DropDown from './pages/Dropdown';
 import Footer from './pages/Footer/Footer';
+import Add from './pages/Position/Add';
 
 function App() {
   return (
@@ -38,7 +39,7 @@ function App() {
           <NavBarSecondary />
           <Deposit />
         </Route>
-        <Route exact path='/earn/withdrawn'>
+        <Route exact path='/earn/withdraw'>
           <NavBarSecondary />
           <Withdrawn />
         </Route>
@@ -49,6 +50,10 @@ function App() {
         <Route exact path='/position/remove'>
           <NavBarSecondary />
           <Remove />
+        </Route>
+        <Route exact path='/position/add'>
+          <NavBarSecondary />
+          <Add />
         </Route>
       </Switch>
       <Footer />

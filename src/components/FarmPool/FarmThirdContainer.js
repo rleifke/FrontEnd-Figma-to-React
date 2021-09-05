@@ -138,8 +138,8 @@ const Flex = styled.div`
 const Wrapper = styled.section`
   width: 45vw;
   display: block;
-  margin: 3rem 0;
-  margin-left: 7.5vw;
+  margin: 3rem 0 6rem 7.5vw;
+  padding-bottom: 3rem;
 `;
 
 const Header = styled.h1`
@@ -190,6 +190,7 @@ const Button = styled.button`
   box-shadow: 0px 0px 12px rgba(128, 255, 219, 0.36);
   color: var(--main-color);
   padding: 12px 25px;
+  cursor: pointer;
 `;
 
 const Control = styled.div`
@@ -206,4 +207,5 @@ const Back = styled.p`
   font-weight: 600;
   color: var(--main-color);
   margin-left: 1rem;
+  cursor: pointer;
 `;

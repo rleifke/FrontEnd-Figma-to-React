@@ -183,7 +183,7 @@ const Wrapper = styled.section`
   width: 45vw;
   min-height: 57vh;
   display: block;
-  margin: 3rem auto;
+  margin: 3rem auto 6rem;
 `;
 
 const Header = styled.h1`

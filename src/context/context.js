@@ -20,6 +20,32 @@ const AppProvider = ({ children }) => {
   const handleBackIndexFarm = () => {
     setIndexFarm(indexFarm - 1);
   };
+  //
+  //
+  const [removeIndex, setRemoveIndex] = useState(0);
+  const handleIndexRemove = () => {
+    if (removeIndex < 3) {
+      setRemoveIndex(removeIndex + 1);
+    } else {
+      setRemoveIndex(2);
+    }
+  };
+  const handleBackIndexRemove = () => {
+    setRemoveIndex(removeIndex - 1);
+  };
+  //
+  //
+  const [addIndex, setAddIndex] = useState(0);
+  const handleIndexAdd = () => {
+    if (addIndex < 3) {
+      setAddIndex(addIndex + 1);
+    } else {
+      setAddIndex(2);
+    }
+  };
+  const handleBackIndexAdd = () => {
+    setAddIndex(addIndex - 1);
+  };
   return (
     <AppContext.Provider
       value={{
@@ -28,6 +54,12 @@ const AppProvider = ({ children }) => {
         handleIndexFarm,
         indexFarm,
         handleBackIndexFarm,
+        removeIndex,
+        handleIndexRemove,
+        handleBackIndexRemove,
+        addIndex,
+        handleIndexAdd,
+        handleBackIndexAdd,
       }}
     >
       {children}

@@ -38,7 +38,7 @@ const Earn = () => {
             <h2 className='center'>Total Borrow</h2>
             <h2 className='center'>Utilization</h2>
             <h2 className='center'>Balance</h2>
-            <h2></h2>
+            <div></div>
           </Header>
           {EarnData.map((item, index) => {
             return (

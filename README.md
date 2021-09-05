@@ -1,6 +1,6 @@
-# Getting Started with Create React App
+# Dahlia Interface (Front-end [pre-merge])
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+This is the pre-merged front-end for Dahlia. 
 
 ## Available Scripts
 

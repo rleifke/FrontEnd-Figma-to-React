@@ -30,7 +30,7 @@ const Home = () => {
           <Card>
             <ContainerContentCard>
               <Title>Total Value Locked</Title>
-              <Amount>50,282,049 USD</Amount>
+              <Amount>53,282,049 USD</Amount>
             </ContainerContentCard>
           </Card>
         </CardContainer>

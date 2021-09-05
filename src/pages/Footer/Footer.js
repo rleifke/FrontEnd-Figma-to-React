@@ -39,23 +39,23 @@ const Footer = () => {
           <Container>
             <Content>
               <Header>Menu</Header>
-              <LinksTo to='/'>Farm Pools</LinksTo>
-              <LinksTo to='/'>Earn</LinksTo>
-              <LinksTo to='/'>Positions</LinksTo>
+              <LinksTo to='/farmpool'>Farm Pools</LinksTo>
+              <LinksTo to='/earn'>Earn</LinksTo>
+              <LinksTo to='/position'>Positions</LinksTo>
             </Content>
             <Content>
               <Header>Support</Header>
               <LinksA href='#'>Docs</LinksA>
-              <LinksA href='#'>Blog</LinksA>
+              <LinksA href='https://medium.com/dahlia-finance'>Blog</LinksA>
               <LinksA href='#'>Audit</LinksA>
             </Content>
             <Content>
               <Header>Connect</Header>
-              <LinksA href='#'>
+              <LinksA href='https://discord.gg/JheZs3JnCs'>
                 <FaDiscord />
                 Discord
               </LinksA>
-              <LinksA href='#'>
+              <LinksA href='https://twitter.com/dahliafinance'>
                 <FaTwitter />
                 Twitter
               </LinksA>

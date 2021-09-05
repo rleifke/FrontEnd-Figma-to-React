@@ -30,9 +30,8 @@ const Footer = () => {
             <LogoLink to='/'>DAHLIA</LogoLink>
           </Flex>
           <Desc>
-            Ullamcorper mauris in dolor quis enim nibh vel commodo. Scelerisque
-            nullam amet massa massa, quisque quis neque. Libero volutpat egestas
-            in eget.
+          Dahlia will be the first leveraged yield farming protocol on the Celo blockchain. Enabling
+          yield farmers access to leverage and anyone to earn high yield on their idle assets.
           </Desc>
           <Copy>© 2021 Dahlia Finance . All rights reserved.</Copy>
         </LogoContainer>
@@ -40,23 +39,15 @@ const Footer = () => {
           <Container>
             <Content>
               <Header>Menu</Header>
-              <LinksTo to='/'>Alpha Pools</LinksTo>
-              <LinksTo to='/'>Swap</LinksTo>
               <LinksTo to='/'>Farm Pools</LinksTo>
-              <LinksTo to='/'>Status</LinksTo>
-            </Content>
-            <Content>
-              <Header>Important Links</Header>
-              <LinksA href='#'>Disclaimer</LinksA>
-              <LinksA href='#'>Terms & Conditions</LinksA>
-              <LinksA href='#'>Cookie Policy</LinksA>
-              <LinksA href='#'>Privacy Policy</LinksA>
+              <LinksTo to='/'>Earn</LinksTo>
+              <LinksTo to='/'>Positions</LinksTo>
             </Content>
             <Content>
               <Header>Support</Header>
-              <LinksA href='#'>Help Docs</LinksA>
+              <LinksA href='#'>Docs</LinksA>
               <LinksA href='#'>Blog</LinksA>
-              <LinksA href='#'>Contact Us</LinksA>
+              <LinksA href='#'>Audit</LinksA>
             </Content>
             <Content>
               <Header>Connect</Header>

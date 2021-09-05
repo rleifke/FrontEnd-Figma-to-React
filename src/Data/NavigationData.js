@@ -63,16 +63,16 @@ export const navHomeData = [
   {
     icons: <FaTwitter />,
     title: 'Twitter',
-    link: '#',
+    link: 'https://twitter.com/dahliafinance',
   },
   {
     icons: <FaDiscord />,
     title: 'Discord',
-    link: '#',
+    link: 'https://discord.gg/JheZs3JnCs',
   },
   {
     icons: <FaGithub />,
     title: 'Github',
-    link: '#',
+    link: 'https://github.com/Dahlia-Finance',
   },
 ];

@@ -24,7 +24,7 @@ const Home = () => {
       <Container>
         <TextContainer>
           <Header>Leveraged yield farming, on Celo.</Header>
-          <Button to='/'>Launch App</Button>
+          <Button to='/farmpool'>Launch App</Button>
         </TextContainer>
         <CardContainer>
           <Card>
